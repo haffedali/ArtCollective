@@ -3,23 +3,20 @@
 
 <h3 id='collective-name'>{{this.dataValues.title}}</h3>
 <button type="submit" class="btn btn-sm btn-outline-secondary" id='joinOrLeave' style='font-size: 14px'>Join/Leave</button>
+  
 <div class ="carousel-container imgSlickDiv">
   <h4>Image</h4>
+  
   <div id='imgSlick' class = 'img' data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+   
     <!-- #each handlebar loop to get data via id -->
     {{#each imageObj}}
         <div class = "slider-item imgSlickItems" id="{{this.id}}" data-id="{{this.id}}" data-userId="{{this.userId}}"><p class='title'>{{this.title}}</p>
           <a  href="../submission/{{this.id}}"><img class="slider-image" height=168 width=168 src="{{this.file}}"></a> </div>
     {{/each}}
-
-    <div class="slider-nav"></div>
       <a href="#" class="prev-slide" id="prev-slide-1"><i class="fas fa-angle-left fa-3x"></i></a>
-  
-  <a href="#" class="next-slide" id="next-slide-1"><i class="fas fa-angle-right fa-3x"></i></a>
+      <a href="#" class="next-slide" id="next-slide-1"><i class="fas fa-angle-right fa-3x"></i></a>
   </div>
-  {{!-- <a href="#" class="prev-slide" id="prev-slide-1"><i class="fas fa-angle-left fa-3x"></i></a>
-  
-  <a href="#" class="next-slide" id="next-slide-1"><i class="fas fa-angle-right fa-3x"></i></a> --}}
 </div>
 
 
@@ -31,7 +28,6 @@
           <a  href="../submission/{{this.id}}"><img class="slider-image" src="/images/text.jpg"></a> </div> 
     {{/each}}
 
-    <div class="slider-nav"></div>
   </div>
   <a href="#" class="prev-slide" id="prev-slide-2"><i class="fas fa-angle-left fa-3x"></i></a>
   
@@ -46,7 +42,6 @@
         <a  href="../submission/{{this.id}}"><img class="slider-image" src="https://cdn1.iconfinder.com/data/icons/musical-notes-1/100/Music_Note6-01-512.png"></a> </div>
     {{/each}}
 
-    <div class="slider-nav"></div>
   </div>
   <a href="#" class="prev-slide" id="prev-slide-3"><i class="fas fa-angle-left fa-3x"></i></a>
   

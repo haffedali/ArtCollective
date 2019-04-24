@@ -18,7 +18,7 @@
 }
 
 .carousel-container {
-    position: relative;
+   
     top: 50px;
     margin: 80px;
     /* background-color: rgba(133, 133, 133, 0.659); */
@@ -32,13 +32,15 @@ h4 {
     margin-left: 15px;
 }
 
-.prev-slide {
+  .prev-slide {
+    color: #cc92cd;
     float: left;
     height: 36px;
     width: 36px;
   }
   
   .next-slide {
+    color: #cc92cd;
     float: right;
     height: 36px;
     width: 36px;
